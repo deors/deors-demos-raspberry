@@ -1,5 +1,6 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 # -*- coding: utf-8 -*-
+
 import RPi.GPIO as GPIO
 import smbus
 import time
