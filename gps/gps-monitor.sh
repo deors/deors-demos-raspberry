@@ -1,0 +1,1 @@
+gpsmon /dev/serial0
