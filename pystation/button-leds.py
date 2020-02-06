@@ -13,8 +13,8 @@ OFF = 0
 HIGHISON = True
 HIGHISOFF = False
 
-BUTTON1 = 5
-BUTTON2 = 4
+BUTTON1 = 6
+BUTTON2 = 5
 RGB_RED = 20
 RGB_GREEN = 21
 RGB_BLUE = 22
@@ -91,14 +91,14 @@ GPIO.setwarnings(False)
 # to use GPIO pin numbers
 GPIO.setmode(GPIO.BCM)
 # set up GPIO input channels
-GPIO.setup(4, GPIO.IN)
-GPIO.setup(5, GPIO.IN)
+GPIO.setup(BUTTON1, GPIO.IN)
+GPIO.setup(BUTTON2, GPIO.IN)
 # init leds
-ledRGBRed = LED(20, HIGHISOFF)
-ledRGBGreen = LED(21, HIGHISOFF)
-ledRGBBlue = LED(22, HIGHISOFF)
-ledRed = LED(24)
-ledBlue = LED(23)
+ledRGBRed = LED(RGB_RED, HIGHISOFF)
+ledRGBGreen = LED(RGB_GREEN, HIGHISOFF)
+ledRGBBlue = LED(RGB_BLUE, HIGHISOFF)
+ledRed = LED(RED)
+ledBlue = LED(BLUE)
 
 print('press Ctrl-C to finish')
 
