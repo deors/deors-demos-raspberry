@@ -12,9 +12,10 @@ sensor = adafruit_bme680.Adafruit_BME680_I2C(i2c)
 sensor.sea_level_pressure = 1013.25
 
 while True:
-    print("\nTemperature: %0.1f C" % sensor.temperature)
-    print("Humidity: %0.1f %%" % sensor.humidity)
-    print("Pressure: %0.1f hPa" % sensor.pressure)
-    print("Altitude = %0.2f meters" % sensor.altitude)
-    print("Gas detector = %0.2f ohms" % sensor.gas)
+    print("Temperature  : %0.1f C" % sensor.temperature)
+    print("Humidity     : %0.1f %%" % sensor.humidity)
+    print("Pressure     : %0.1f hPa" % sensor.pressure)
+    print("Altitude     : %0.2f meters" % sensor.altitude)
+    print("Gas detector : %0.2f ohms" % sensor.gas)
+    print()
     time.sleep(2)
