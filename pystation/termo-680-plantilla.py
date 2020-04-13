@@ -6,6 +6,8 @@ import digitalio
 import busio
 import adafruit_bme680
 import time
+import signal
+import sys
 import _thread
 
 # leds
