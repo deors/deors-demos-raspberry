@@ -2,21 +2,12 @@
 
 import RPi.GPIO as GPIO
 
-# cleanup from a possible previous execution
-def clean(pin):
-    # to use GPIO pin numbers
-    GPIO.setmode(GPIO.BCM)
-    # set up GPIO output channel
-    GPIO.setup(pin, GPIO.OUT)
-    # cleans up the pin
-    GPIO.cleanup()
-    return
-
 GPIO.setwarnings(False)
-
-clean(20)
-clean(21)
-clean(22)
-clean(23)
-clean(24)
-clean(25)
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(20, GPIO.OUT)
+GPIO.setup(21, GPIO.OUT)
+GPIO.setup(22, GPIO.OUT)
+GPIO.setup(23, GPIO.OUT)
+GPIO.setup(24, GPIO.OUT)
+GPIO.setup(25, GPIO.OUT)
+GPIO.cleanup()
