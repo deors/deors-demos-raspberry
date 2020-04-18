@@ -79,6 +79,7 @@ def sigintHandler(sig, frame):
     ledRGBBlue.off()
     ledRed.off()
     ledBlue.off()
+    GPIO.cleanup()
     print
     sys.exit(0)
 
@@ -100,17 +101,17 @@ ledRGBBlue = LED(RGB_BLUE, HIGHISOFF)
 ledRed = LED(RED)
 ledBlue = LED(BLUE)
 
-print('press Ctrl-C to finish')
+print 'press Ctrl-C to exit'
 
 # button control loop
 while True:
     button1Pressed = GPIO.input(BUTTON1)
     button2Pressed = GPIO.input(BUTTON2)
-    
+
     #print('buttons state #1 {} #2 {}'.format(
     #      'on' if button1Pressed else 'off',
     #      'on' if button2Pressed else 'off'))
-    
+
     if button1Pressed and not changing:
         changing = True
         ledRGBRed.state(random.randint(0, 2))
