@@ -6,7 +6,7 @@ import digitalio
 
 print("press the button!")
 
-led = digitalio.DigitalInOut(board.D23)
+led = digitalio.DigitalInOut(board.D20)
 led.direction = digitalio.Direction.OUTPUT
 
 button = digitalio.DigitalInOut(board.D5)

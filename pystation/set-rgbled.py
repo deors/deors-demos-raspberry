@@ -4,9 +4,9 @@ import RPi.GPIO as GPIO
 import sys
 import time
 
-RED = 20
-GREEN = 21
-BLUE = 22
+RED = 22
+GREEN = 23
+BLUE = 24
 
 # set led state function
 def led(pin, mode):
