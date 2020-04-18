@@ -6,8 +6,8 @@ import smbus
 import time
 from ctypes import c_short
 
-AC = 23
-CALE = 24
+AC = 21
+CALE = 20
 
 def encender(pin):
   GPIO.setmode(GPIO.BCM)

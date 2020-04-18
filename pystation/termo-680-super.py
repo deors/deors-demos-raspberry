@@ -16,10 +16,10 @@ MODO_AC = 1
 MODO_CALE = 2
 
 # leds
-led_ac = digitalio.DigitalInOut(board.D23)
+led_ac = digitalio.DigitalInOut(board.D21)
 led_ac.direction = digitalio.Direction.OUTPUT
 
-led_cale = digitalio.DigitalInOut(board.D24)
+led_cale = digitalio.DigitalInOut(board.D20)
 led_cale.direction = digitalio.Direction.OUTPUT
 
 def encender(led):
@@ -33,11 +33,11 @@ def limpiarLeds():
   apagar(led_cale)
 
 # botones
-boton_ac = digitalio.DigitalInOut(board.D5)
+boton_ac = digitalio.DigitalInOut(board.D6)
 boton_ac.direction = digitalio.Direction.INPUT
 boton_ac.pull = digitalio.Pull.UP
 
-boton_cale = digitalio.DigitalInOut(board.D6)
+boton_cale = digitalio.DigitalInOut(board.D5)
 boton_cale.direction = digitalio.Direction.INPUT
 boton_cale.pull = digitalio.Pull.UP
 

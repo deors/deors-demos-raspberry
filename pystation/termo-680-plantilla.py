@@ -11,10 +11,10 @@ import sys
 import _thread
 
 # leds
-led_ac = digitalio.DigitalInOut(board.D23)
+led_ac = digitalio.DigitalInOut(board.D21)
 led_ac.direction = digitalio.Direction.OUTPUT
 
-led_cale = digitalio.DigitalInOut(board.D24)
+led_cale = digitalio.DigitalInOut(board.D20)
 led_cale.direction = digitalio.Direction.OUTPUT
 
 def encender(led):
